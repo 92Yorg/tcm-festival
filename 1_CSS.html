@@ -2,6 +2,14 @@
 
     /* Hero */
 
+    #tcm-hero {
+        background: #000;
+    }
+
+    #tcm-hero h2 {
+        color: #ffb202;
+    }
+    
     #tcm-hero .hero-panel__suffix {
             font-weight: 400;
         }
@@ -25,15 +33,100 @@
     }
 
 
+    /* Body */
+
+    #tcm-body.page-layout {
+        padding: 0;
+    }
+
+    #tcm-body .o-figure {
+        margin: 0;
+    }
+
+    .o-figure__media {
+        margin-bottom: 0;
+        display: block;
+    }
+
+    .o-2col__primary, .o-2col__secondary {
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    @media (min-width: 50em) {
+        #tcm-body.page-layout {
+            padding-top: 2em;
+            padding-bottom: 2em;
+        }
+        .o-2col {
+            display: flex;
+        }
+        .o-2col__primary {
+            float: none;
+        }
+        .o-2col__secondary {
+            float: none;
+        }
+        .o-2col--reversed .o-2col__primary {
+            float: none;
+            order: 2;
+        }
+        .o-2col--reversed .o-2col__secondary {
+            float: none;
+        }
+    }
+
+    .o-lede {
+        color: #021699;
+    }
+
+    @media (min-width: 50em) {
+        #tcm-body p {
+            font-size: 125%;
+        }
+        
+        #tcm-body .o-lede {
+            font-size: 175%;
+            color: #021699;
+        }
+    }
+
     /* Form */
 
-    .form-field .label {
+    #tcm-signup {
+        background-color: #05c6de;
+    }
+
+    #tcm-signup .o-well {
+        color: #000;
+        background-color: #05c6de;
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    #tcm-signup .form-field .label {
 		display: inline-block;
 		margin-right: 6px;
 	}
 
-	.editing-form-control-nested-control {
+	#tcm-signup .editing-form-control-nested-control {
 		display: inline-block;
 	}
+
+    .FormPanel p {
+        margin: 0;
+    }
+
+    @media (min-width: 50em) {
+        #tcm-signup {
+            align-items: center;
+            display: flex;
+        }
+        #tcm-signup .o-well {
+            margin: 0;
+        }
+    }
+
+    
 
 </style>
