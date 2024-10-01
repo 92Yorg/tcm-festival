@@ -76,30 +76,39 @@
         }
     }
 
-    .o-lede {
+    #tcm-body h2 {
+        font-size: 1.5rem;
         color: #021699;
+    }
+
+    #tcm-body h3 {
+        font-size: 1.375rem;
     }
 
     @media (min-width: 50em) {
         #tcm-body p {
             font-size: 125%;
+            margin-bottom: 1em;
         }
         
-        #tcm-body .o-lede {
-            font-size: 175%;
+        #tcm-body h2 {
+            font-size: 2.25rem;
             color: #021699;
+        }
+
+        #tcm-body h3 {
+            font-size: 1.875rem;
         }
     }
 
     /* Form */
 
     #tcm-signup {
-        background-color: #05c6de;
+        background-color: #021699;
     }
 
     #tcm-signup .o-well {
-        color: #000;
-        background-color: #05c6de;
+        background-color: #021699;
         padding: 20px;
         font-size: 1rem;
     }
@@ -109,13 +118,23 @@
 		margin-right: 6px;
 	}
 
-	#tcm-signup .editing-form-control-nested-control {
-		display: inline-block;
-	}
-
     .FormPanel p {
         margin: 0;
     }
+
+    #tcm-signup .btn, #tcm-signup [type=submit] {
+        color: #000;
+        background-color: #ffed61;
+    }
+
+    #tcm-signup .btn:active, #tcm-signup .btn:hover, #tcm-signup [type=submit]:active, #tcm-signup [type=submit]:hover {
+        background-color: #fff;
+    }
+
+    /* #tcm-signup .input-text {
+        background-color: #021699;
+        color: #fff;
+    } */
 
     @media (min-width: 50em) {
         #tcm-signup {
@@ -125,6 +144,27 @@
         #tcm-signup .o-well {
             margin: 0;
         }
+        #tcm-signup .btn, #tcm-signup [type=submit] {
+            padding: .45em 1em;
+            font-size: 1rem;
+            margin-left: 1em;
+        }
+        #tcm-signup .FormPanel {
+            display: flex;
+        }
+        #tcm-signup .editing-form-control-nested-control {
+            display: inline-block;
+        }
+        #tcm-signup .input-text {
+            width: 300px;
+        }
+    }
+
+    @media (min-width: 70em) {
+        #tcm-signup .input-text {
+            width: 440px;
+        }
+        
     }
 
     
