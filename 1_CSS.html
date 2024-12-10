@@ -7,57 +7,41 @@
         background-size: contain;
     }
 
+    @media (min-width: 94em) {
+        #tcm-hero {
+            background-size: 40%;
+        }
+    }
+
+    #tcm-hero img {
+        width: 100%;
+    }
+
     @media (min-width: 50em) {
         #tcm-hero img {
             width: 50%;
         }
     }
 
-    /* Body */
-
-    #tcm-body.page-layout {
-        padding: 0;
+    @media (min-width: 65em) {
+        #tcm-hero img {
+            width: 45%;
+        }
     }
+
+    /* Body */
 
     #tcm-body .o-figure {
         margin: 0;
     }
 
-    #tcm-body .o-figure.tcm-round img {
+    /* #tcm-body .o-figure.tcm-round img {
         border-radius: 30px;
-    }
+    } */
 
     .o-figure__media {
         margin-bottom: 0;
         display: block;
-    }
-
-    .o-2col__primary, .o-2col__secondary {
-        padding: 0;
-        margin-top: 20px;
-    }
-
-    @media (min-width: 50em) {
-        #tcm-body.page-layout {
-            padding-top: 2em;
-            padding-bottom: 2em;
-        }
-        .o-2col {
-            display: flex;
-        }
-        .o-2col__primary {
-            float: none;
-        }
-        .o-2col__secondary {
-            float: none;
-        }
-        .o-2col--reversed .o-2col__primary {
-            float: none;
-            order: 2;
-        }
-        .o-2col--reversed .o-2col__secondary {
-            float: none;
-        }
     }
 
     #tcm-body h2 {
@@ -66,6 +50,20 @@
 
     #tcm-body h3 {
         font-size: 1.375rem;
+    }
+
+    @media (min-width: 30em) {
+        .o-grid--2up .o-grid__item {
+            width: calc(50% - 10px);
+        }
+        
+        .o-grid--2up .o-grid__item, .o-grid--4up .o-grid__item {
+            margin-left: 10px;
+            padding-left: 10px;
+            margin-bottom: 20px;
+            border-style: solid;
+            border-width: 0 0 0 1px;
+        }
     }
 
     @media (min-width: 50em) {
@@ -83,40 +81,6 @@
         }
     }
 
-    /* Form */
-
-    #tcm-signup {
-        background-color: #021699;
-    }
-
-    #tcm-signup .o-well {
-        background-color: #021699;
-        padding: 20px;
-        font-size: 1rem;
-    }
-
-    #tcm-signup .form-field .label {
-		display: inline-block;
-		margin-right: 6px;
-	}
-
-    .FormPanel p {
-        margin: 0;
-    }
-
-    #tcm-signup .btn, #tcm-signup [type=submit] {
-        color: #000;
-        background-color: #ffed61;
-    }
-
-    #tcm-signup .btn:active, #tcm-signup .btn:hover, #tcm-signup [type=submit]:active, #tcm-signup [type=submit]:hover {
-        background-color: #fff;
-    }
-
-    /* #tcm-signup .input-text {
-        background-color: #021699;
-        color: #fff;
-    } */
 
     @media (min-width: 50em) {
         #tcm-signup {
@@ -154,15 +118,37 @@
         display: none;
     }
 
-    /* Event Card */
+    /* Program Card */
 
-    @media (min-width: 50em) {
-        .program-card:not(.program-card--featured) {
-            border-radius: 20px;
+    .program-card:not(.program-card--featured) {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    /* .program-card:not(.program-card--featured) {
+        border-radius: 20px;
+    }
+
+    .program-card__image {
+        border-radius: 16px 16px 0 0;
+    } */
+
+    @media (max-width: 29.99em) {
+        .program-card:not(.program-card--featured) .program-card__media {
+            width: 100%;
+            padding: 10px 10px 0;
         }
+    }
 
-        .program-card__image {
-            border-radius: 16px 16px 0 0;
+    @media (max-width: 49.99em) {
+        .program-card:not(.program-card--featured) .program-card__media {
+            width: 100%;
+            padding: 15px 15px 0;;
         }
     }
 
